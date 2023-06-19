@@ -1,0 +1,86 @@
+@font-face {
+    font-family: gameFont;
+    src: url(./fonts/SupplyCenter-0W9nz.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.score-label {
+    position: absolute;
+    font-family: gameFont;
+    font-size: small;
+    user-select: none;
+}
+
+#score-board {
+    position: absolute; 
+    color: bisque; 
+    padding: 8px;
+    font-family: gameFont;
+    font-size: large;
+    user-select: none;
+}
+
+.board {
+    position: absolute;
+    background: rgba(152, 5, 116, 0.8);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    padding: 16px;
+    font-family: gameFont;
+    font-size: 10px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    color: darkgray;
+    border-radius: 15px;
+    display: none;
+    user-select: none;
+}
+
+#start-game-board {
+    display: block;
+}
+
+#final-score {
+    color: cornflowerblue;
+}
+
+button {
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    font-family: gameFont;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(30, 99, 226);
+}
+
+#mute-button {
+    color: bisque;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#volume-off {
+    display: none;
+}
+
+* {
+    touch-action: none;
+}
