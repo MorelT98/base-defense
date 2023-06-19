@@ -40,6 +40,7 @@ body {
     border-radius: 15px;
     display: none;
     user-select: none;
+    touch-action: none;
 }
 
 #start-game-board {
